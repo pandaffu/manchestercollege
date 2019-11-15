@@ -1,0 +1,448 @@
+@font-face {
+  font-family: 'Harlow Solid Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Harlow Solid Italic'), url('../fonts/HARLOWSI_1.woff') format('woff');
+}
+/* Fonts */
+h2{
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+p{
+  font-size: 18px;
+  font-family: 'Dosis', sans-serif;
+}
+#header2{
+  height: 100vh;
+  background-size: cover;
+  background: url("../img/cricquet.jpg") no-repeat center;
+  .container-header{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    height: 100%;
+    color: white;
+    .heading{
+      display: flex;
+      justify-content: center;
+      font-family: 'Dosis', sans-serif;
+      font-size: 100px;
+      line-height: 60px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
+#header{
+  height: 100vh;
+  background-size: cover;
+  background: url("../img/header.jpg") no-repeat center;
+  .container-header{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    height: 100%;
+    color: white;
+    .welcome{
+      text-align: center;
+      display: block;
+      text-transform: lowercase;
+      font-family: 'Harlow Solid Italic', serif;
+      font-size: 50px;
+      hr{
+        display: inline-block;
+        border: 2px solid #fff;
+        border-radius: 2px;
+        width: 140px;
+        margin: 10px;
+      }
+    }
+    .heading{
+      display: flex;
+      justify-content: center;
+      font-family: 'Dosis', sans-serif;
+      font-size: 100px;
+      line-height: 60px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
+
+#about-manchester{
+  padding: 30px;
+  .row{
+    position: relative;
+    top: -70px;
+    .col-sm:nth-child(1){
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    .col-sm:nth-child(2){
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      h2{
+        margin-top: 40px;
+      }
+      .underline{
+        display: inline-block;
+        border: 2px solid #2875B0;
+        border-radius: 2px;
+        width: 140px;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+#where-to-eat{
+  background: url("../img/salford.jpg") center no-repeat;
+  background-size: cover;
+  padding: 30px;
+  .where-to-eat-container{
+    position: relative;
+    top: -70px;
+    background: #E2EAF0;
+    filter: drop-shadow(11px 20px 20px rgba(0, 0, 0, 0.16));
+    h2{
+      text-align: center;
+      padding: 30px;
+    }
+    .where-to-eat-row {
+      margin: 0 auto;
+      max-width: 1100px;
+      .where-to-eat-col{
+        .item:hover .item-overlay.top {
+          top: 0;
+        }
+        .item{
+          position: relative;
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+          .item-overlay{
+            position: absolute;
+            top: 0; right: 0;
+            border: none;
+            /* fix text transition issue for .left and .right but need to overwrite left and right properties in .right */
+            width: 100%;
+            bottom: 30px;
+            transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+            color: #ffffff;
+            background-color:rgba(0,0,0,0.4);
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            text-transform: uppercase;
+            text-align: center;
+          }
+          .item-overlay.top{
+            top: 100%;
+            bottom: 30px;
+            overflow: hidden;
+          }
+        }
+        a{
+          img {
+            padding-bottom: 30px;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+#whats-on{
+  padding: 30px;
+  .whats-on-container{
+    h2{
+      text-align: center;
+      padding: 30px 0 30px 0;
+    }
+    .whats-on-row{
+      .whats-on-col{
+        .item:hover .item-overlay.top {
+          top: 0;
+        }
+        .item{
+          position: relative;
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+          .item-overlay{
+            position: absolute;
+            top: 0; right: 0;
+            border: none;
+            /* fix text transition issue for .left and .right but need to overwrite left and right properties in .right */
+            width: 100%;
+            bottom: 30px;
+            transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+            color: #ffffff;
+            background-color:rgba(0,0,0,0.4);
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            text-transform: uppercase;
+            text-align: center;
+          }
+          .item-overlay.top{
+            top: 100%;
+            bottom: 30px;
+            overflow: hidden;
+          }
+        }
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        padding-bottom: 30px;
+      }
+    }
+    p{
+      text-align: center;
+    }
+  }
+}
+
+#visit-manchester{
+  i{
+    margin-right: 20px;
+  }
+}
+
+#how-to-get-here{
+  background: url("../img/manchester-hero.jpg") center no-repeat;
+  background-size: cover;
+  margin-top: 150px;
+  padding: 30px;
+  .container-how-to-get-here{
+    display: flex;
+    background: #E2EAF0;
+    position: relative;
+    bottom: -80px;
+    .info-how-to-get-here{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 30px;
+      .underline{
+        display: inline-block;
+        border: 2px solid #2875B0;
+        border-radius: 2px;
+        width: 140px;
+        margin: 10px 0;
+      }
+      .button{
+        font-family: 'Dosis', sans-serif;
+        text-decoration: none;
+        color: white;
+        background: #2875B0;
+        width: 100px;
+        margin: 0;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 5px;
+        a{
+          text-decoration: none;
+          color: white;
+          font-size: 20px;
+        }
+      }
+    }
+    .image-how-to-get-here{
+      img{
+        padding: 20px;
+        position: relative;
+        bottom: 60px;
+        width: 450px;
+      }
+    }
+  }
+}
+.manchester-skyline{
+  padding-top: 100px;
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  img{
+    height: auto;
+    width: 100%;
+  }
+}
+#contact {
+  position: relative;
+  padding: 0 50px 50px 50px;
+}
+#contact h2 {
+  position: relative;
+  top: -5px;
+  left: 300px;
+  z-index: 1;
+  width: 220px;
+  color: #0F1928;
+}
+#contact .contact-form-container {
+  max-width: 1080px;
+  margin: 150px auto 0;
+  display: flex;
+}
+#contact .contact-form-container .form {
+  padding-right: 25px;
+  border-right: 4px solid #2875B0;
+  width: 50%;
+}
+#contact .contact-form-container .form form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+#contact .contact-form-container .form form input {
+  text-transform: uppercase;
+}
+#contact .contact-form-container .form form input, #contact .contact-form-container .form form textarea {
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  background: #eee;
+  border: 3px solid #2875B0;
+  border-radius: 10px;
+  resize: none;
+  font-family: Montserrat;
+}
+#contact .contact-form-container .form form input[type=submit] {
+  font-family: Montserrat, arial, serif;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  background: #2875B0;
+  width: 130px;
+  border: none;
+  padding: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 0;
+}
+#contact .contact-form-container .form form .submit-container {
+  display: flex;
+  justify-content: flex-end;
+}
+#contact .contact-form-container .social-media {
+  padding-left: 25px;
+}
+#contact .contact-form-container .social-media .social-media-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#contact .contact-form-container .social-media .social-media-item .circle {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  background: #ffffff;
+  border-radius: 100%;
+}
+#contact .contact-form-container .social-media .social-media-item .circle img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 40px;
+}
+#contact .contact-form-container .social-media .social-media-item a {
+  color: #333;
+  text-decoration: none;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+#footer{
+    background: #2875B0;
+  .footer-container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1100px;
+    flex-wrap: wrap;
+    h2{
+      font-size: 15px;
+      color: white;
+    }
+    a{
+      font-size: 12px;
+      text-decoration: none;
+      color: white;
+    }
+    .links-container{
+      display: flex;
+      flex-direction: row;
+      .links{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .social-media-links{
+      margin: 20px;
+      i{
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #about-manchester .row {
+    display: flex;
+    flex-direction: column;
+  }
+  #how-to-get-here .container-how-to-get-here{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #how-to-get-here .container-how-to-get-here img{
+    top: -30px;
+    height: 350px;
+    max-width: 250px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #header .container-header .heading {
+    font-size: 80px;
+  }
+  #header .container-header .welcome {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 500px){
+  #header .container-header .heading {
+    font-size: 50px;
+  }
+  #header .container-header .welcome {
+    font-size: 30px;
+  }
+  #header .container-header .welcome hr{
+    width: 40px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  p{
+    font-size: 14px;
+  }
+  .manchester-skyline img{
+    height: 100px;
+  }
+}
